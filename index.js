@@ -26,10 +26,16 @@ client.on("ready", () => {
         status: "online",
         game: {
             name: "Type in !help for help",
-            type: "STREAMING"
+            type: "PLAYING"
         }
     }); 
 });
+
+client.on('guildMemberAdd', member => {
+    member.send(
+      `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun 😀`
+    )
+  })
 
 client.on("message", async message => {
     const prefix = "!";
