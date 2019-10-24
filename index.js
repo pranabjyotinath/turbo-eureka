@@ -39,17 +39,8 @@ client.on('guildMemberAdd', member => {
   })
 
 client.on("message", async message => {
-    const prefixes = JSON.parse(fs.readFileSync("./prefixes.json"))
+    const prefix = "!"
 
-    if (!prefixes[message.guild.id]) {
-        prefixes[message.guild.id] = {
-            prefixes: botconfig.prefix
-        }
-    }
-
-    const prefix = prefixes[message.guild.id].prefixes
-    console.log(prefix)
-    
     if (message.author.bot) return;
     if (!message.guild) return;
     if (!message.content.startsWith(prefix)) return;
