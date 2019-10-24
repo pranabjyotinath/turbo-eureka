@@ -37,7 +37,7 @@ module.exports = {
             } else if (me === clientChosen) {
                 return "It's a tie!";
             } else {
-                return "You lost!";
+                return message.guild.me.displayName + "lost!";
             }
         }
     }
