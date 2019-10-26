@@ -1,3 +1,3 @@
-exports.PREFIX = '!';
+export const PREFIX = '!';
 
-exports.GOOGLE_API_KEY = 'AIzaSyCVRTCopUtM2CoFWWHUB97e4FD377fnQ48';
+export const GOOGLE_API_KEY = 'AIzaSyCVRTCopUtM2CoFWWHUB97e4FD377fnQ48';
