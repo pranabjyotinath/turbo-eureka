@@ -1,0 +1,3 @@
+exports.PREFIX = '!';
+
+exports.GOOGLE_API_KEY = 'AIzaSyCVRTCopUtM2CoFWWHUB97e4FD377fnQ48';
