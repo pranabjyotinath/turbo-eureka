@@ -9,6 +9,7 @@ module.exports = {
     run: async (client, message) => {
         joker.getRandomCNJoke (function(joke) {
             const embed = new RichEmbed()
+                .setColor('RANDOM')
                 .setTitle('Epic Joke')
                 .setDescription(joke)
 
