@@ -19,7 +19,7 @@ run: async (client, message, args) => {
         `**${dead.displayName}** was killed by **${message.member.displayName}** for no reason`,
         `**${dead.displayName}** died of a bomb placed by **${message.member.displayName}**`,
         `**${dead.displayName}** died because of **${message.member.displayName}**'s food`,
-        `**${dead.displayName}**died by dabbing hard`
+        `**${dead.displayName}** died by dabbing hard`
     )
 
     const randomElement = dialog[Math.floor(Math.random()*dialog.length)]
