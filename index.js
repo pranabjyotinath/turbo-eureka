@@ -32,11 +32,9 @@ client.on("ready", () => {
     }); 
 });
 
-client.on('guildMemberAdd', member => {
-    member.send(
-      `Welcome on the server! Please be aware that we won't tolerate troll, spam or harassment. Have fun 😀`
-    )
-  })
+client.on("guildMemberAdd" ,(message, member) => {
+    message.channel.send("Welcome To Our Server, Have fun!" + member)
+});
 
 client.on("message", async message => {
     const prefix = "!"
