@@ -9,6 +9,7 @@
     "discord.js": "^11.5.1",
     "dotenv": "^8.2.0",
     "fs": "0.0.1-security",
+    "give-me-a-joke": "^0.1.2",
     "random-puppy": "^1.1.0"
   },
   "devDependencies": {},
