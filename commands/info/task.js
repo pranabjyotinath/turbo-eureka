@@ -7,10 +7,10 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new RichEmbed()
             .setTitle('Next Commands to Be made')
-            .addField('1. Music Command')
-            .addField('2. Clear Command')
-            .addField('3. Joke Command')
-            .addField('4. Prefix Command')
+            .addField('1. Music Command', false)
+            .addField('2. Clear Command', false)
+            .addField('3. Joke Command', false)
+            .addField('4. Prefix Command', false)
             
         message.channel.send(embed);
     }
