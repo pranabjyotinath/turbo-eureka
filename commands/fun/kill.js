@@ -27,7 +27,6 @@ run: async (client, message, args) => {
             .setColor('RANDOM')
             .setDescription(`${randomElement}`)
             .setTitle(`Breaking News`)
-            .setThumbnail('../../media/433925-200.png')
    
     message.channel.send(embed);
 }
