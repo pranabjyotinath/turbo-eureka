@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": "10.16.3x"
+    "node": "10.16.3x",
+    "npm": "6.12.0x"
   },
   "dependencies": {
     "ascii-table": "0.0.9",
