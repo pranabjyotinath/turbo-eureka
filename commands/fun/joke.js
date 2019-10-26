@@ -7,7 +7,7 @@ module.exports = {
     usage: "[mention | id | username]",
 
     run: async (client, message) => {
-        joker.getRandomCNJoke (function(joke) {
+        joker.getRandomDadJoke (function(joke) {
             const embed = new RichEmbed()
                 .setColor('RANDOM')
                 .setTitle('Epic Joke')
