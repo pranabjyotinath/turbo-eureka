@@ -1,4 +1,4 @@
-// const { RichEmbed } = require('discord.js')
+const { getMember } = require("../../function.js");
 
 module.exports = {
     name: "kill",
@@ -8,6 +8,6 @@ module.exports = {
 run: async (client, message, args) => {
     // Get a member from mention, id, or username
     let person = getMember(message, args[0]);
-    console.log(person)
+    console.log(person + message)
 }
 }
