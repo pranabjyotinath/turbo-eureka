@@ -10,9 +10,14 @@ run: async (client, message, args) => {
     // Get a member from mention, id, or username
     let person = getMember(message, args[0]);
 
+    const dialog = Array(`**${person.displayName}** died due to diarhea because of **${message.member.displayName}**`)
+
+    const randomElement = dialog[Math.floor(Math.random()*dialog.length)]
+
     const embed = new RichEmbed()
-            .setColor("#ffb6c1")
-            .addField(`${message.author} + ", " + ${randomElement}`);
+            .setColor('#005500')
+            .setDescription(`${randomElement}`)
+            .setTitle(`Breaking News`)
    
     message.channel.send(embed);
 }

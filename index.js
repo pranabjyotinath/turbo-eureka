@@ -38,9 +38,6 @@ client.on('guildMemberAdd', member => {
     )
 })
 
-("guildMemberAdd" ,(message, member) => {
-    message.channel.send("Welcome")
-});
 client.on("message", async message => {
     const prefix = "!"
 
