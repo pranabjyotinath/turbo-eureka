@@ -12,7 +12,7 @@ run: async (client, message, args) => {
 
     const embed = new RichEmbed()
             .setColor("#ffb6c1")
-            .addField(`A test ${person}`);
+            .addField(`${message.author} + ", " + ${randomElement}`);
    
     message.channel.send(embed);
 }
