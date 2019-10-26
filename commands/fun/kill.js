@@ -8,9 +8,9 @@ module.exports = {
 
 run: async (client, message, args) => {
     // Get a member from mention, id, or username
-    let person = getMember(message, args[0]);
+    let dead = getMember(message, args[0]);
 
-    const dialog = Array(`**${person.displayName}** died due to diarhea because of **${message.member.displayName}**`)
+    const dialog = Array(`**@${dead.displayName}** died due to diarhea because of **${message.member.displayName}**`)
 
     const randomElement = dialog[Math.floor(Math.random()*dialog.length)]
 
