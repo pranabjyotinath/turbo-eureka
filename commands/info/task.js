@@ -2,6 +2,7 @@ const {RichEmbed} = require('discord.js')
 
 module.exports = {
     name: "tasks",
+    category: "info",
     description: "Just a development Command",
     run: async (client, message, args) => {
         const embed = new RichEmbed()

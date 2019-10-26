@@ -24,7 +24,7 @@ run: async (client, message, args) => {
     const randomElement = dialog[Math.floor(Math.random()*dialog.length)]
 
     const embed = new RichEmbed()
-            .setColor('#005500')
+            .setColor('RANDOM')
             .setDescription(`${randomElement}`)
             .setTitle(`Breaking News`)
    
