@@ -4,6 +4,7 @@ const { config } = require("dotenv");
 const fs = require("fs");
 const YouTube = require('simple-youtube-api');
 const ytdl = require('ytdl-core');
+const ffmpeg = require('ffmpeg')
 
 const client = new Client({
     disableEveryone: true
